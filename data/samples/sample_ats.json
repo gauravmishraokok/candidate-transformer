@@ -1,0 +1,35 @@
+{
+  "applicant_name": "Rahul S.",
+  "contact_email": "rahul.sharma@example.com",
+  "mobile": "9876543210",
+  "current_title": "Sr. Backend Engineer",
+  "employer": "Infosys Limited",
+  "city": "Bengaluru",
+  "linkedin": "https://linkedin.com/in/rahulsharma",
+  "experience_years": 4,
+  "skill_list": ["Python", "FastAPI", "PostgreSQL", "Docker", "AWS"],
+  "work_history": [
+    {
+      "company": "Infosys",
+      "position": "Senior Backend Engineer",
+      "start_date": "2022-03",
+      "end_date": null,
+      "description": "Built microservices for enterprise clients"
+    },
+    {
+      "company": "Wipro",
+      "position": "Software Engineer",
+      "start_date": "2020-06",
+      "end_date": "2022-02",
+      "description": "Worked on REST APIs"
+    }
+  ],
+  "academic": [
+    {
+      "institution": "IIT Bombay",
+      "degree": "B.Tech",
+      "field": "Computer Science",
+      "end_year": "2020"
+    }
+  ]
+}

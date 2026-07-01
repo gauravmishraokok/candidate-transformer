@@ -1,0 +1,10 @@
+Spoke with Rahul Sharma on 24th June 2026.
+Email: rahul.sharma@example.com.
+He's been at Infosys for about 4 years now, working as a
+Sr Backend Engg. Strong in Python and FastAPI. Also mentioned
+he knows react a bit and has done some work with postgres and
+redis. Based in Bangalore.
+GitHub: github.com/rahulsharma
+Seemed very enthusiastic about the role. Notice period 60 days.
+Comp expectation: 25LPA.
+Graduation: B.Tech CSE from IIT Bombay, passed out 2020.

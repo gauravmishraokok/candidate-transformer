@@ -1,0 +1,288 @@
+{
+  "profiles": [
+    {
+      "candidate_id": "cand_5c8f6ebb9fc7",
+      "full_name": "Rahul Sharma",
+      "emails": [
+        "rahul.sharma@example.com"
+      ],
+      "phones": [
+        "+919876543210"
+      ],
+      "location": {
+        "city": "Bangalore",
+        "region": null,
+        "country": "IN"
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/rahulsharma",
+        "github": "https://github.com/rahulsharma",
+        "portfolio": null,
+        "other": []
+      },
+      "headline": null,
+      "years_experience": 4.0,
+      "skills": [
+        {
+          "name": "Python",
+          "confidence": 0.836,
+          "sources": [
+            "src_ats_json_01"
+          ]
+        },
+        {
+          "name": "FastAPI",
+          "confidence": 0.836,
+          "sources": [
+            "src_ats_json_01"
+          ]
+        },
+        {
+          "name": "PostgreSQL",
+          "confidence": 0.836,
+          "sources": [
+            "src_ats_json_01"
+          ]
+        },
+        {
+          "name": "Docker",
+          "confidence": 0.836,
+          "sources": [
+            "src_ats_json_01"
+          ]
+        },
+        {
+          "name": "AWS",
+          "confidence": 0.836,
+          "sources": [
+            "src_ats_json_01"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "Infosys",
+          "title": "Senior Backend Engineer",
+          "start": "2022-03",
+          "end": null,
+          "summary": "Built microservices for enterprise clients"
+        },
+        {
+          "company": "Wipro",
+          "title": "Software Engineer",
+          "start": "2020-06",
+          "end": "2022-02",
+          "summary": "Worked on REST APIs"
+        }
+      ],
+      "education": [
+        {
+          "institution": "IIT Bombay",
+          "degree": "B.Tech",
+          "field": "Computer Science",
+          "end_year": 2020
+        }
+      ],
+      "overall_confidence": 0.7722,
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "src_csv_0",
+          "method": "direct_field",
+          "raw_value": "Rahul Sharma",
+          "reliability_weight": 0.9
+        },
+        {
+          "field": "full_name",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "Rahul S.",
+          "reliability_weight": 0.88
+        },
+        {
+          "field": "emails",
+          "source": "src_csv_0",
+          "method": "direct_field",
+          "raw_value": "rahul.sharma@example.com",
+          "reliability_weight": 0.9
+        },
+        {
+          "field": "emails",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "rahul.sharma@example.com",
+          "reliability_weight": 0.88
+        },
+        {
+          "field": "phones",
+          "source": "src_csv_0",
+          "method": "direct_field",
+          "raw_value": "+919876543210",
+          "reliability_weight": 0.9
+        },
+        {
+          "field": "phones",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "+919876543210",
+          "reliability_weight": 0.88
+        },
+        {
+          "field": "location",
+          "source": "src_csv_0",
+          "method": "direct_field",
+          "raw_value": "Bangalore, India",
+          "reliability_weight": 0.9
+        },
+        {
+          "field": "location",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "Bengaluru",
+          "reliability_weight": 0.88
+        },
+        {
+          "field": "years_experience",
+          "source": "src_csv_0",
+          "method": "direct_field",
+          "raw_value": "4.0",
+          "reliability_weight": 0.9
+        },
+        {
+          "field": "years_experience",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "4.0",
+          "reliability_weight": 0.88
+        },
+        {
+          "field": "skills",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "Python",
+          "reliability_weight": 0.88
+        },
+        {
+          "field": "skills",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "FastAPI",
+          "reliability_weight": 0.88
+        },
+        {
+          "field": "skills",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "PostgreSQL",
+          "reliability_weight": 0.88
+        },
+        {
+          "field": "skills",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "Docker",
+          "reliability_weight": 0.88
+        },
+        {
+          "field": "skills",
+          "source": "src_ats_json_01",
+          "method": "field_mapped",
+          "raw_value": "AWS",
+          "reliability_weight": 0.88
+        }
+      ]
+    },
+    {
+      "candidate_id": "cand_984f78a7aca1",
+      "full_name": "Priya Patel",
+      "emails": [
+        "priya.patel@example.com"
+      ],
+      "phones": [
+        "+919123456789"
+      ],
+      "location": {
+        "city": "Mumbai",
+        "region": null,
+        "country": "IN"
+      },
+      "links": {
+        "linkedin": "https://linkedin.com/in/priyapatel",
+        "github": null,
+        "portfolio": null,
+        "other": []
+      },
+      "headline": null,
+      "years_experience": 2.5,
+      "skills": [],
+      "experience": [
+        {
+          "company": "TCS",
+          "title": "Full Stack Developer",
+          "start": null,
+          "end": null,
+          "summary": null
+        }
+      ],
+      "education": [],
+      "overall_confidence": 0.6650000000000001,
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "src_csv_1",
+          "method": "direct_field",
+          "raw_value": "Priya Patel",
+          "reliability_weight": 0.9
+        },
+        {
+          "field": "emails",
+          "source": "src_csv_1",
+          "method": "direct_field",
+          "raw_value": "priya.patel@example.com",
+          "reliability_weight": 0.9
+        },
+        {
+          "field": "phones",
+          "source": "src_csv_1",
+          "method": "direct_field",
+          "raw_value": "+919123456789",
+          "reliability_weight": 0.9
+        },
+        {
+          "field": "location",
+          "source": "src_csv_1",
+          "method": "direct_field",
+          "raw_value": "Mumbai, India",
+          "reliability_weight": 0.9
+        },
+        {
+          "field": "years_experience",
+          "source": "src_csv_1",
+          "method": "direct_field",
+          "raw_value": "2.5",
+          "reliability_weight": 0.9
+        }
+      ]
+    }
+  ],
+  "meta": {
+    "total_sources": 2,
+    "total_raw_records": 3,
+    "total_profiles": 2,
+    "pipeline_version": "1.0.0",
+    "extraction_stats": [
+      {
+        "source": "data/samples/sample_recruiter.csv",
+        "type": "csv",
+        "records": 2,
+        "status": "OK"
+      },
+      {
+        "source": "data/samples/sample_ats.json",
+        "type": "ats_json",
+        "records": 1,
+        "status": "OK"
+      }
+    ]
+  }
+}
