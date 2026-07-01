@@ -139,7 +139,7 @@ Naïve pairwise merging breaks on transitive linkages — if A links to B and B 
       "primary_email": "rahul.sharma@example.com",
       "phone": "+919876543210",
       "location_country": "IN",
-      "github_url": "https://github.com/rahulsharma",
+      "github_url": "https://github.com/Rahul122703",
       "skill_names": ["Python", "FastAPI", "PostgreSQL", "Docker", "AWS"],
       "current_company": "Infosys",
       "current_title": "Senior Backend Engineer",

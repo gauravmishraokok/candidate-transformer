@@ -37,7 +37,7 @@ SOURCES_MAIN = [
     {"type": "csv",      "path": "data/samples/sample_recruiter.csv"},
     {"type": "ats_json", "path": "data/samples/sample_ats.json"},
     {"type": "llm_text", "path": "data/samples/sample_recruiter_notes.txt"},
-    {"type": "github",   "path": "octocat"},
+    {"type": "github",   "path": "Rahul122703"},
 ]
 
 
@@ -89,9 +89,9 @@ def step1_show_inputs():
         pause(0.6)
 
     console.print(Panel(
-        "Username: [bold]octocat[/bold]\n"
-        "  GET https://api.github.com/users/octocat\n"
-        "  GET https://api.github.com/users/octocat/repos  (languages -> skills)",
+        "Username: [bold]Rahul122703[/bold]\n"
+        "  GET https://api.github.com/users/Rahul122703\n"
+        "  GET https://api.github.com/users/Rahul122703/repos  (languages -> skills)",
         title="[bold]GitHub API -- Username Lookup[/bold]",
         border_style="dim",
         padding=(0, 1),
@@ -110,13 +110,13 @@ def step2_run_pipeline():
         ("[bold blue][INGEST][/bold blue]",       "Detected 4 sources: CSV, ATS JSON, LLM Text, GitHub API"),
         ("[bold green][EXTRACT][/bold green]",    "CSV         -> 2 records extracted"),
         ("[bold green][EXTRACT][/bold green]",    "ATS JSON    -> 1 record extracted"),
-        ("[bold green][EXTRACT][/bold green]",    "GitHub API  -> 1 record extracted  [dim](octocat)[/dim]"),
-        ("[bold green][EXTRACT][/bold green]",    "LLM Text    -> 1 record extracted  [dim](Groq / Llama3-8b)[/dim]"),
+        ("[bold green][EXTRACT][/bold green]",    "GitHub API  -> 1 record extracted  [dim](Rahul122703)[/dim]"),
+        ("[bold green][EXTRACT][/bold green]",    "LLM Text    -> 1 record extracted  [dim](Groq / Llama-3.1-8b-instant)[/dim]"),
         ("[bold yellow][NORMALIZE][/bold yellow]","5 raw records normalized  [dim](E.164 phones | YYYY-MM dates | ISO-3166 countries | canonical skills)[/dim]"),
         ("[bold magenta][RESOLVE][/bold magenta]","Entity resolution: 5 records -> 3 candidate groups"),
         ("[bold magenta][RESOLVE][/bold magenta]","Rahul: merged via email anchor  [dim](src_csv_0 + src_ats_json_01 + src_llm_text_01)[/dim]"),
         ("[bold cyan][MERGE][/bold cyan]",        "3 canonical profiles built with confidence scoring"),
-        ("[bold cyan][SCORE][/bold cyan]",        "Rahul confidence: 0.77  |  Priya: 0.67  |  Octocat: 0.64"),
+        ("[bold cyan][SCORE][/bold cyan]",        "Rahul confidence: 0.77  |  Priya: 0.67  |  Rahul122703: computed"),
         ("[bold white][PROJECT][/bold white]",    "Default config applied  [dim](11 fields + provenance)[/dim]"),
         ("[bold green][VALIDATE][/bold green]",   "All profiles valid [OK]"),
     ]
@@ -349,11 +349,14 @@ def step7_broken_github():
     pause(0.3)
 
     import logging as _logging
-    _logging.getLogger("pipeline.extractors.github_extractor").setLevel(_logging.WARNING)
+    gh_logger = _logging.getLogger("pipeline.extractors.github_extractor")
+    gh_logger.setLevel(_logging.ERROR)  # silence during extraction; we show our own panel
 
     from pipeline.extractors.github_extractor import GithubApiExtractor
     extractor = GithubApiExtractor()
     records = extractor.extract("thisuserdoesnotexist99999")
+
+    gh_logger.setLevel(_logging.WARNING)  # restore
 
     console.print(Panel(
         "[yellow]WARNING[/yellow]  pipeline.extractors.github_extractor:\n"
@@ -372,6 +375,7 @@ def step7_broken_github():
 
     from pipeline.orchestrator import PipelineOrchestrator
 
+    gh_logger.setLevel(_logging.ERROR)
     with Progress(
         SpinnerColumn(),
         TextColumn("[progress.description]{task.description}"),
@@ -382,6 +386,7 @@ def step7_broken_github():
         orch = PipelineOrchestrator(config_path="configs/default_config.json")
         degraded_result = orch.run(degraded_sources)
         progress.update(task, description="Done")
+    gh_logger.setLevel(_logging.WARNING)
 
     n_profiles = len(degraded_result.get("profiles", []))
     n_records  = degraded_result.get("meta", {}).get("total_raw_records", 0)

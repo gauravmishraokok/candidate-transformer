@@ -72,7 +72,7 @@ class LlmTextExtractor(BaseExtractor):
 
         try:
             groq_client = Groq(api_key=api_key)
-            client = instructor.from_groq(groq_client)
+            client = instructor.from_groq(groq_client, mode=instructor.Mode.JSON)
         except Exception as e:
             logger.error(f"Failed to initialize Groq/Instructor client: {e}")
             return []
@@ -130,7 +130,7 @@ class LlmTextExtractor(BaseExtractor):
     def _extract_identity(self, client, text: str) -> IdentityExtraction | None:
         try:
             result = client.chat.completions.create(
-                model="llama3-8b-8192",
+                model="llama-3.1-8b-instant",
                 response_model=IdentityExtraction,
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
@@ -147,7 +147,7 @@ class LlmTextExtractor(BaseExtractor):
     def _extract_experience(self, client, text: str) -> ExperienceExtraction | None:
         try:
             result = client.chat.completions.create(
-                model="llama3-8b-8192",
+                model="llama-3.1-8b-instant",
                 response_model=ExperienceExtraction,
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},
@@ -164,7 +164,7 @@ class LlmTextExtractor(BaseExtractor):
     def _extract_skills(self, client, text: str) -> SkillsExtraction | None:
         try:
             result = client.chat.completions.create(
-                model="llama3-8b-8192",
+                model="llama-3.1-8b-instant",
                 response_model=SkillsExtraction,
                 messages=[
                     {"role": "system", "content": SYSTEM_PROMPT},

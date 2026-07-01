@@ -16,18 +16,19 @@
       },
       "links": {
         "linkedin": "https://linkedin.com/in/rahulsharma",
-        "github": "https://github.com/rahulsharma",
+        "github": "https://github.com/Rahul122703",
         "portfolio": null,
         "other": []
       },
-      "headline": null,
+      "headline": "Hi! I'm Rahul Sharma, IT student doing  full-stack development, web scraping, data analysis, and automation.",
       "years_experience": 4.0,
       "skills": [
         {
           "name": "Python",
-          "confidence": 0.836,
+          "confidence": 0.945,
           "sources": [
-            "src_ats_json_01"
+            "src_ats_json_01",
+            "src_github_Rahul122703"
           ]
         },
         {
@@ -57,6 +58,55 @@
           "sources": [
             "src_ats_json_01"
           ]
+        },
+        {
+          "name": "CSS",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_Rahul122703"
+          ]
+        },
+        {
+          "name": "TypeScript",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_Rahul122703"
+          ]
+        },
+        {
+          "name": "Java",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_Rahul122703"
+          ]
+        },
+        {
+          "name": "C++",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_Rahul122703"
+          ]
+        },
+        {
+          "name": "JavaScript",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_Rahul122703"
+          ]
+        },
+        {
+          "name": "Jupyter",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_Rahul122703"
+          ]
+        },
+        {
+          "name": "HTML",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_Rahul122703"
+          ]
         }
       ],
       "experience": [
@@ -83,7 +133,7 @@
           "end_year": 2020
         }
       ],
-      "overall_confidence": 0.7722,
+      "overall_confidence": 0.8260666666666667,
       "provenance": [
         {
           "field": "full_name",
@@ -98,6 +148,13 @@
           "method": "field_mapped",
           "raw_value": "Rahul S.",
           "reliability_weight": 0.88
+        },
+        {
+          "field": "full_name",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "Rahul sharma",
+          "reliability_weight": 0.85
         },
         {
           "field": "emails",
@@ -140,6 +197,13 @@
           "method": "field_mapped",
           "raw_value": "Bengaluru",
           "reliability_weight": 0.88
+        },
+        {
+          "field": "headline",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "Hi! I'm Rahul Sharma, IT student doing  full-stack development, web scraping, data analysis, and automation.",
+          "reliability_weight": 0.85
         },
         {
           "field": "years_experience",
@@ -189,6 +253,62 @@
           "method": "field_mapped",
           "raw_value": "AWS",
           "reliability_weight": 0.88
+        },
+        {
+          "field": "skills",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "CSS",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "TypeScript",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "Python",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "Java",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "C++",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "JavaScript",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "Jupyter",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_Rahul122703",
+          "method": "api_response",
+          "raw_value": "HTML",
+          "reliability_weight": 0.85
         }
       ]
     },
@@ -263,102 +383,12 @@
           "reliability_weight": 0.9
         }
       ]
-    },
-    {
-      "candidate_id": "cand_4e69048aaa4e",
-      "full_name": "The Octocat",
-      "emails": [],
-      "phones": [],
-      "location": {
-        "city": "San Francisco",
-        "region": null,
-        "country": null
-      },
-      "links": {
-        "linkedin": null,
-        "github": "https://github.com/octocat",
-        "portfolio": "https://github.blog",
-        "other": []
-      },
-      "headline": null,
-      "years_experience": null,
-      "skills": [
-        {
-          "name": "Ruby",
-          "confidence": 0.8075,
-          "sources": [
-            "src_github_octocat"
-          ]
-        },
-        {
-          "name": "CSS",
-          "confidence": 0.8075,
-          "sources": [
-            "src_github_octocat"
-          ]
-        },
-        {
-          "name": "HTML",
-          "confidence": 0.8075,
-          "sources": [
-            "src_github_octocat"
-          ]
-        }
-      ],
-      "experience": [
-        {
-          "company": "github",
-          "title": null,
-          "start": null,
-          "end": null,
-          "summary": null
-        }
-      ],
-      "education": [],
-      "overall_confidence": 0.6980000000000002,
-      "provenance": [
-        {
-          "field": "full_name",
-          "source": "src_github_octocat",
-          "method": "api_response",
-          "raw_value": "The Octocat",
-          "reliability_weight": 0.85
-        },
-        {
-          "field": "location",
-          "source": "src_github_octocat",
-          "method": "api_response",
-          "raw_value": "San Francisco",
-          "reliability_weight": 0.85
-        },
-        {
-          "field": "skills",
-          "source": "src_github_octocat",
-          "method": "api_response",
-          "raw_value": "Ruby",
-          "reliability_weight": 0.85
-        },
-        {
-          "field": "skills",
-          "source": "src_github_octocat",
-          "method": "api_response",
-          "raw_value": "CSS",
-          "reliability_weight": 0.85
-        },
-        {
-          "field": "skills",
-          "source": "src_github_octocat",
-          "method": "api_response",
-          "raw_value": "HTML",
-          "reliability_weight": 0.85
-        }
-      ]
     }
   ],
   "meta": {
     "total_sources": 3,
     "total_raw_records": 4,
-    "total_profiles": 3,
+    "total_profiles": 2,
     "pipeline_version": "1.0.0",
     "extraction_stats": [
       {
@@ -374,7 +404,7 @@
         "status": "OK"
       },
       {
-        "source": "octocat",
+        "source": "Rahul122703",
         "type": "github",
         "records": 1,
         "status": "OK"

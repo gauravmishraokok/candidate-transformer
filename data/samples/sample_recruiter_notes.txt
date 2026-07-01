@@ -5,7 +5,7 @@ currently Sr Backend Engg. Strong python + fastapi background,
 mentioned postgres a lot and some redis. Also knows react
 "a little bit" his words.
 
-github is github.com/rahulsharma (said he has some OSS stuff there)
+github is github.com/Rahul122703 (said he has some OSS stuff there)
 email confirmed: rahul.sharma@example.com
 
 Based outta Bangalore. B.Tech CSE IIT Bombay 2020.

@@ -5,17 +5,24 @@
       "primary_email": "rahul.sharma@example.com",
       "phone": "+919876543210",
       "location_country": "IN",
-      "github_url": "https://github.com/rahulsharma",
+      "github_url": "https://github.com/Rahul122703",
       "skill_names": [
         "Python",
         "FastAPI",
         "PostgreSQL",
         "Docker",
-        "AWS"
+        "AWS",
+        "CSS",
+        "TypeScript",
+        "Java",
+        "C++",
+        "JavaScript",
+        "Jupyter",
+        "HTML"
       ],
       "current_company": "Infosys",
       "current_title": "Senior Backend Engineer",
-      "overall_confidence": 0.7722
+      "overall_confidence": 0.8260666666666667
     },
     {
       "full_name": "Priya Patel",
@@ -27,30 +34,12 @@
       "current_company": "TCS",
       "current_title": "Full Stack Developer",
       "overall_confidence": 0.6650000000000001
-    },
-    {
-      "full_name": "The Octocat",
-      "primary_email": null,
-      "phone": null,
-      "location_country": null,
-      "github_url": "https://github.com/octocat",
-      "skill_names": [
-        "HTML",
-        "CSS",
-        "Ruby"
-      ],
-      "current_company": "github",
-      "current_title": null,
-      "overall_confidence": 0.6980000000000002,
-      "_validation_warnings": [
-        "Required field 'primary_email' is missing or null"
-      ]
     }
   ],
   "meta": {
     "total_sources": 3,
     "total_raw_records": 4,
-    "total_profiles": 3,
+    "total_profiles": 2,
     "pipeline_version": "1.0.0",
     "extraction_stats": [
       {
@@ -66,7 +55,7 @@
         "status": "OK"
       },
       {
-        "source": "octocat",
+        "source": "Rahul122703",
         "type": "github",
         "records": 1,
         "status": "OK"
