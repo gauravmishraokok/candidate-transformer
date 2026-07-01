@@ -1,10 +1,20 @@
-Spoke with Rahul Sharma on 24th June 2026.
-Email: rahul.sharma@example.com.
-He's been at Infosys for about 4 years now, working as a
-Sr Backend Engg. Strong in Python and FastAPI. Also mentioned
-he knows react a bit and has done some work with postgres and
-redis. Based in Bangalore.
-GitHub: github.com/rahulsharma
-Seemed very enthusiastic about the role. Notice period 60 days.
-Comp expectation: 25LPA.
-Graduation: B.Tech CSE from IIT Bombay, passed out 2020.
+Call notes - Rahul Sharma - 24th June 2026
+
+Good call, about 45 mins. Hes been at infosys ~4 yrs,
+currently Sr Backend Engg. Strong python + fastapi background,
+mentioned postgres a lot and some redis. Also knows react
+"a little bit" his words.
+
+github is github.com/rahulsharma (said he has some OSS stuff there)
+email confirmed: rahul.sharma@example.com
+
+Based outta Bangalore. B.Tech CSE IIT Bombay 2020.
+
+Notice period - 60 days. Wants 25LPA minimum, flexible on
+role title. Seemed genuinely excited, asked good questions
+about the data infra team.
+
+Skills mentioned: Python, FastAPI, PostgreSQL, Redis,
+React (basic), Docker (used at work), AWS (S3 and EC2 mainly)
+
+Follow up: send JD by EOW.

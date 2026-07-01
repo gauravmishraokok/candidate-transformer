@@ -263,12 +263,102 @@
           "reliability_weight": 0.9
         }
       ]
+    },
+    {
+      "candidate_id": "cand_4e69048aaa4e",
+      "full_name": "The Octocat",
+      "emails": [],
+      "phones": [],
+      "location": {
+        "city": "San Francisco",
+        "region": null,
+        "country": null
+      },
+      "links": {
+        "linkedin": null,
+        "github": "https://github.com/octocat",
+        "portfolio": "https://github.blog",
+        "other": []
+      },
+      "headline": null,
+      "years_experience": null,
+      "skills": [
+        {
+          "name": "Ruby",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_octocat"
+          ]
+        },
+        {
+          "name": "CSS",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_octocat"
+          ]
+        },
+        {
+          "name": "HTML",
+          "confidence": 0.8075,
+          "sources": [
+            "src_github_octocat"
+          ]
+        }
+      ],
+      "experience": [
+        {
+          "company": "github",
+          "title": null,
+          "start": null,
+          "end": null,
+          "summary": null
+        }
+      ],
+      "education": [],
+      "overall_confidence": 0.6980000000000002,
+      "provenance": [
+        {
+          "field": "full_name",
+          "source": "src_github_octocat",
+          "method": "api_response",
+          "raw_value": "The Octocat",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "location",
+          "source": "src_github_octocat",
+          "method": "api_response",
+          "raw_value": "San Francisco",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_octocat",
+          "method": "api_response",
+          "raw_value": "Ruby",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_octocat",
+          "method": "api_response",
+          "raw_value": "CSS",
+          "reliability_weight": 0.85
+        },
+        {
+          "field": "skills",
+          "source": "src_github_octocat",
+          "method": "api_response",
+          "raw_value": "HTML",
+          "reliability_weight": 0.85
+        }
+      ]
     }
   ],
   "meta": {
-    "total_sources": 2,
-    "total_raw_records": 3,
-    "total_profiles": 2,
+    "total_sources": 3,
+    "total_raw_records": 4,
+    "total_profiles": 3,
     "pipeline_version": "1.0.0",
     "extraction_stats": [
       {
@@ -280,6 +370,12 @@
       {
         "source": "data/samples/sample_ats.json",
         "type": "ats_json",
+        "records": 1,
+        "status": "OK"
+      },
+      {
+        "source": "octocat",
+        "type": "github",
         "records": 1,
         "status": "OK"
       }
